@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midgods Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="gamesss.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top rounded-bottom-4 px-3" style="border-radius: 0 0 20px 20px;">
+    <a class="navbar-brand logo-neon" href="#">Midgods Store</a>
+    <div class="mx-auto w-50">
+      <input class="form-control" type="search" placeholder="Search...">
+    </div>
+    <div class="d-flex">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">All Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-user"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div class="container mt-5 position-relative">
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="asusherocarousel.png" class="d-block w-100 img-fluid" alt="ASUS">
+        </div>
+        <div class="carousel-item">
+          <img src="carousel2redmagic.jpg" class="d-block w-100 img-fluid" alt="RedMagic">
+        </div>
+        <div class="carousel-item">
+          <img src="carousal3leno.jpg" class="d-block w-100 img-fluid" alt="Lenovo">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Products Grid -->
+  <div class="container my-5">
+    <div class="row g-4">
+      <!-- Product Cards -->
+      <script>
+        const productImages = [
+          'trigger.jpg', 'finger sleeve.png', 'oneplus1.webp', 'iqoo1.webp', 'xiaomi1.webp',
+          'carousel3leno.jpg', 'carousel2redmagic.jpg', 'asusproduct1.png', 'asusherocarousel.png'
+        ];
+        const productNames = [
+          'Gaming Trigger', 'Finger Sleeve', 'OnePlus Phone', 'iQOO Phone', 'Xiaomi Phone',
+          'Lenovo Legion', 'RedMagic Device', 'ASUS Product', 'ASUS Hero Edition'
+        ];
+        const productDescs = [
+          'High-performance gaming triggers for mobile FPS players.',
+          'Sweat-proof, frictionless sleeves for thumb accuracy.',
+          'Powerful flagship phone optimized for gamers.',
+          'Smooth experience with gamer-centric features.',
+          'Budget gaming phone with powerful specs.',
+          'Beast performance with RGB and cooling.',
+          'Extreme hardware and gaming UI.',
+          'Official ASUS accessory and product.',
+          'Featured gaming hero edition with max performance.'
+        ];
+      </script>
+      <!-- Generate Cards -->
+      <!-- Manually added to avoid JS dependency -->
+      <div class="col-md-4 fade-in" style="animation-delay: 0.1s">
+        <div class="card bg-dark text-white border-info h-100">
+          <img src="images/trigger.jpg" class="card-img-top" style="object-fit: contain; height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">Gaming Trigger</h5>
+            <p class="card-text">High-performance gaming triggers for mobile FPS players.</p>
+            <button class="btn btn-outline-info add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 fade-in" style="animation-delay: 0.2s">
+        <div class="card bg-dark text-white border-info h-100">
+          <img src="images/finger sleeve.png" class="card-img-top" style="object-fit: contain; height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">Finger Sleeve</h5>
+            <p class="card-text">Sweat-proof, frictionless sleeves for thumb accuracy.</p>
+            <button class="btn btn-outline-info add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 fade-in" style="animation-delay: 0.3s">
+        <div class="card bg-dark text-white border-info h-100">
+          <img src="images/oneplus1.webp" class="card-img-top" style="object-fit: contain; height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">OnePlus Phone</h5>
+            <p class="card-text">Powerful flagship phone optimized for gamers.</p>
+            <button class="btn btn-outline-info add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 fade-in" style="animation-delay: 0.4s">
+        <div class="card bg-dark text-white border-info h-100">
+          <img src="images/iqoo1.webp" class="card-img-top" style="object-fit: contain; height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">iQOO Phone</h5>
+            <p class="card-text">Smooth experience with gamer-centric features.</p>
+            <button class="btn btn-outline-info add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 fade-in" style="animation-delay: 0.5s">
+        <div class="card bg-dark text-white border-info h-100">
+          <img src="images/xiaomi1.webp" class="card-img-top" style="object-fit: contain; height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">Xiaomi Phone</h5>
+            <p class="card-text">Budget gaming phone with powerful specs.</p>
+            <button class="btn btn-outline-info add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 fade-in" style="animation-delay: 0.6s">
+        <div class="card bg-dark text-white border-info h-100">
+          <img src="images/carousel3leno.jpg" class="card-img-top" style="object-fit: contain; height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">Lenovo Legion</h5>
+            <p class="card-text">Beast performance with RGB and cooling.</p>
+            <button class="btn btn-outline-info add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 fade-in" style="animation-delay: 0.7s">
+        <div class="card bg-dark text-white border-info h-100">
+          <img src="images/carousel2redmagic.jpg" class="card-img-top" style="object-fit: contain; height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">RedMagic Device</h5>
+            <p class="card-text">Extreme hardware and gaming UI.</p>
+            <button class="btn btn-outline-info add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 fade-in" style="animation-delay: 0.8s">
+        <div class="card bg-dark text-white border-info h-100">
+          <img src="images/asusproduct1.png" class="card-img-top" style="object-fit: contain; height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">ASUS Product</h5>
+            <p class="card-text">Official ASUS accessory and product.</p>
+            <button class="btn btn-outline-info add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 fade-in" style="animation-delay: 0.9s">
+        <div class="card bg-dark text-white border-info h-100">
+          <img src="images/asusherocarousel.png" class="card-img-top" style="object-fit: contain; height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">ASUS Hero Edition</h5>
+            <p class="card-text">Featured gaming hero edition with max performance.</p>
+            <button class="btn btn-outline-info add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Toast Notification -->
+  <div class="cart-toast alert alert-info position-fixed end-0 bottom-0 m-4 d-none">
+    🛒 Added to cart!
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 border-top border-info">
+    &copy; 2025 Midgods Store. All rights reserved.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelectorAll(".add-to-cart-btn").forEach((btn) => {
+      btn.onclick = () => {
+        const toast = document.querySelector(".cart-toast");
+        toast.classList.remove("d-none");
+        setTimeout(() => toast.classList.add("d-none"), 2000);
+      };
+    });
+  </script>
+</body>
+</html>
